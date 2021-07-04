@@ -11,7 +11,9 @@ const connectDB = async () => {
             useUnifiedTopology: true,
             useCreateIndex: true,
             useNewUrlParser: true,
-            useFindAndModify: false
+            useFindAndModify: false,
+            keepAlive: 999999999999999,
+            connectTimeoutMS: 1000
         });
         console.log("Database connected");
     }catch(err){

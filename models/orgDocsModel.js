@@ -24,16 +24,14 @@ const orgDocsSchema = new mongoose.Schema({
     },
     state: {
         type: String,
-        required: true
+        // required: true
     },
 
     documents: [
         {
             doctype: String,
-                
-            
             description: String,
-            
+            _id: false,
         }
     ],
 

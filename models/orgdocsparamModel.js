@@ -8,7 +8,7 @@ const orgDocsParamSchema = new mongoose.Schema({
     doctype: {
         type: "String",
         required: true,
-        unique: true,
+        // unique: true,
     },
     description: {
         type: "String",
@@ -21,7 +21,8 @@ const orgDocsParamSchema = new mongoose.Schema({
             valuelist: String,
             example: String,
             regex: String,
-            Errormessage: String
+            Errormessage: String,
+            _id: false,
         }
     ],
     createddate: {
